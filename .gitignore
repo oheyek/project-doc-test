@@ -1,0 +1,3 @@
+# Ignore generated documentation
+docs/_build/
+*.log
