@@ -5,7 +5,7 @@ To jest strona główna dokumentacji mojego projektu. Poniżej znajduje się spi
 
 .. toctree::
    :maxdepth: 2
-   :caption: Spis treści:
+   :caption: Contents:
 
-   module1
-   module2
+   python
+   cpp

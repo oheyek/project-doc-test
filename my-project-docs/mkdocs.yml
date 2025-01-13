@@ -1,4 +1,5 @@
 site_name: Project Automatycznej Dokumentacji
 nav:
   - Home: index.md
-  - About: about.md
+  - Python Code: python.md
+  - C++ Code: cpp.md
