@@ -27,6 +27,9 @@ jobs:
       - name: Install dependencies for MkDocs
         run: pip install mkdocs mkdocs-material mkdocstrings mkdocstrings-python
 
+      - name: Generate python.rst and python.md
+        run: python generate_python_docs.py
+
       - name: Build MkDocs documentation
         run: |
           cd my-project-docs
