@@ -1,8 +1,6 @@
 var NAVTREEINDEX0 =
 {
 "dir_68267d1309a1af8e8297ef4c3efbcdba.html":[1,0,0],
-"example2_8py.html":[1,0,0,2],
-"example2_8py.html#a85ef9862adc68a2c3317f7a8b30e9414":[1,0,0,2,0],
 "example_8cpp.html":[1,0,0,0],
 "example_8cpp.html#ae5a0c053aa6696aace68bff13ff3c988":[1,0,0,0,0],
 "example_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[1,0,0,0,1],
@@ -14,8 +12,6 @@ var NAVTREEINDEX0 =
 "index.html":[],
 "namespaceexample.html":[0,0,0],
 "namespaceexample.html#afa0161d79758092bbe0f6ea85da91150":[0,0,0,0],
-"namespaceexample2.html":[0,0,1],
-"namespaceexample2.html#a85ef9862adc68a2c3317f7a8b30e9414":[0,0,1,0],
 "namespacemembers.html":[0,1,0],
 "namespacemembers_func.html":[0,1,1],
 "namespaces.html":[0,0],
