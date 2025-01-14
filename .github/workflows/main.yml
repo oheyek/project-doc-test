@@ -45,7 +45,7 @@ jobs:
 
       - name: Install dependencies for Sphinx
         run: |
-          pip install sphinx sphinx-rtd-theme
+          pip install sphinx sphinx-rtd-theme breathe 
 
       - name: Build Sphinx documentation
         run: make html
