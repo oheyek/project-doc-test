@@ -25,7 +25,7 @@ jobs:
           python-version: 3.11
 
       - name: Install dependencies for MkDocs
-        run: pip install mkdocs mkdocs-material
+        run: pip install mkdocs mkdocs-material mkdocstrings mkdocstrings-python
 
       - name: Build MkDocs documentation
         run: |
