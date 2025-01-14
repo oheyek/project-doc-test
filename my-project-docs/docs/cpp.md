@@ -1,4 +1,4 @@
-# Program przykładowy: Dodawanie dwóch liczb
+# Dokumentacja C++
 
 ## Opis
 Ten program w języku C++ demonstruje, jak używać komentarzy do dokumentacji. Program dodaje dwie liczby i wyświetla ich sumę.

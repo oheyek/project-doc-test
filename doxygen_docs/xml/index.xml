@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.13.2" xml:lang="en-US">
+  <compound refid="namespaceexample" kind="namespace"><name>example</name>
+    <member refid="namespaceexample_1afa0161d79758092bbe0f6ea85da91150" kind="function"><name>add_numbers</name></member>
+  </compound>
+  <compound refid="example_8cpp" kind="file"><name>example.cpp</name>
+    <member refid="example_8cpp_1ae5a0c053aa6696aace68bff13ff3c988" kind="function"><name>addNumbers</name></member>
+    <member refid="example_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="example_8py" kind="file"><name>example.py</name>
+  </compound>
+  <compound refid="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir"><name>src</name>
+  </compound>
+</doxygenindex>

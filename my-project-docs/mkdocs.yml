@@ -1,5 +1,23 @@
-site_name: Project Automatycznej Dokumentacji
+site_name: Dokumentacja Projektu
+
 nav:
-  - Home: index.md
-  - Python Code: python.md
-  - C++ Code: cpp.md
+  - Strona główna: index.md
+  - Python:
+      - Dokumentacja: python.md
+  - C++:
+      - Dokumentacja: cpp.md
+
+plugins:
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: ["../src"]
+        clang:
+          paths: ["../src"]
+
+
+markdown_extensions:
+  - fenced_code
+  - admonition
+  - pymdownx.superfences
+  - pymdownx.highlight

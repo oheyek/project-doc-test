@@ -6,7 +6,7 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'Projekt Automatycznej Dokumentacji'
+project = 'SNWO'
 copyright = '2025, Stebnicki i Zelder'
 author = 'Stebnicki i Zelder'
 release = '1.0'
@@ -30,3 +30,11 @@ html_static_path = ['_static']
 import os
 import sys
 sys.path.insert(0, os.path.abspath('../src'))
+
+extensions.append('breathe')
+
+# Ustawienia Breathe
+breathe_projects = {
+    "CppProject": "../doxygen_docs/xml"
+}
+breathe_default_project = "CppProject"

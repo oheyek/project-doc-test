@@ -1,5 +1,5 @@
 """
-Example Module
+Example Module - docstring test
 --------------
 This module demonstrates how to use docstrings for documentation.
 """
