@@ -61,7 +61,7 @@ jobs:
         run: doxygen Doxyfile
 
       - name: Move Doxygen output
-        run: mv doxygen_docs/* gh-pages/doxygen/
+        run: mv doxygen_docs/html gh-pages/doxygen/
 
       # --- DEPLOY TO GITHUB PAGES ---
       - name: Deploy to GitHub Pages
