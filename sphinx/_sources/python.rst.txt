@@ -6,3 +6,8 @@ Python
    :undoc-members:
    :show-inheritance:
 
+.. automodule:: examplesub
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
