@@ -1,4 +1,4 @@
-name: Test Setup
+name: Dokumentacja wielu systemow
 
 on:
   push:
@@ -6,12 +6,61 @@ on:
       - main
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      # Checkout the repository
+      - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Display directory
-        run: ls -R
+      # Create a clean directory for GitHub Pages
+      - name: Prepare deployment directory
+        run: mkdir -p gh-pages
+
+      # --- MKDOCS ---
+      - name: Set up Python for MkDocs
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.11
+
+      - name: Install dependencies for MkDocs
+        run: pip install mkdocs mkdocs-material
+
+      - name: Build MkDocs documentation
+        run: |
+          cd my-project-docs
+          mkdocs build
+
+      - name: Move MkDocs output
+        run: | 
+          cd my-project-docs/
+          mv site ../gh-pages/mkdocs
+
+      # --- SPHINX ---
+      - name: Install dependencies for Sphinx
+        run: |
+          pip install -r docs/requirements.txt  # Assuming Sphinx dependencies are in requirements.txt
+
+      - name: Build Sphinx documentation
+        run: make html
+
+      - name: Move Sphinx output
+        run: mv build/html gh-pages/sphinx
+
+      # --- DOXYGEN ---
+      - name: Install Doxygen
+        run: sudo apt-get install -y doxygen
+
+      - name: Generate Doxygen documentation
+        run: doxygen Doxyfile
+
+      - name: Move Doxygen output
+        run: mv doxygen_docs gh-pages/doxygen
+
+      # --- DEPLOY TO GITHUB PAGES ---
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: gh-pages
