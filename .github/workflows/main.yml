@@ -1,4 +1,4 @@
-name: Dokumentacja wielu systemow
+name: Dokumentacja wielu systemów
 
 on:
   push:
@@ -38,15 +38,23 @@ jobs:
           mv site ../gh-pages/mkdocs
 
       # --- SPHINX ---
+      - name: Set up Python for Sphinx
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.11
+
       - name: Install dependencies for Sphinx
         run: |
-          pip install -r docs/requirements.txt  # Assuming Sphinx dependencies are in requirements.txt
+          pip install sphinx sphinx-rtd-theme
 
       - name: Build Sphinx documentation
-        run: make html
+        run: |
+          cd my-project-docs
+          make html
 
       - name: Move Sphinx output
-        run: mv build/html gh-pages/sphinx
+        run: |
+          mv my-project-docs/build/html gh-pages/sphinx
 
       # --- DOXYGEN ---
       - name: Install Doxygen
