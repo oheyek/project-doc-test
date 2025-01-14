@@ -19,5 +19,9 @@ var NAVTREEINDEX0 =
 "namespacemembers.html":[0,1,0],
 "namespacemembers_func.html":[0,1,1],
 "namespaces.html":[0,0],
-"pages.html":[]
+"namespacetest.html":[0,0,2],
+"namespacetest.html#aaea3ab00855b7f3dd00fe62eb77744a2":[0,0,2,0],
+"pages.html":[],
+"test_8py.html":[1,0,0,3],
+"test_8py.html#aaea3ab00855b7f3dd00fe62eb77744a2":[1,0,0,3,0]
 };
