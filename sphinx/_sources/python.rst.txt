@@ -1,17 +1,7 @@
 Python
 =======
 
-.. automodule:: test
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
 .. automodule:: example
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
-.. automodule:: examplesub
    :members:
    :undoc-members:
    :show-inheritance:
