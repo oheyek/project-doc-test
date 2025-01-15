@@ -8,9 +8,6 @@
   </compound>
   <compound refid="example_8py" kind="file"><name>example.py</name>
   </compound>
-  <compound refid="example2_8cpp" kind="file"><name>example2.cpp</name>
-    <member refid="example2_8cpp_1ad6972f1ed0ff33885b5085ffca31150e" kind="function"><name>subtractNumbers</name></member>
-  </compound>
   <compound refid="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir"><name>src</name>
   </compound>
 </doxygenindex>

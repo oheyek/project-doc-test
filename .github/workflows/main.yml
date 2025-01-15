@@ -40,6 +40,13 @@ jobs:
           cd my-project-docs/
           mv site ../gh-pages/mkdocs
 
+      # --- DOXYGEN ---
+      - name: Install Doxygen
+        run: sudo apt-get install -y doxygen
+
+      - name: Generate Doxygen documentation
+        run: doxygen Doxyfile 
+
       # --- SPHINX ---
       - name: Set up Python for Sphinx
         uses: actions/setup-python@v4
@@ -48,21 +55,14 @@ jobs:
 
       - name: Install dependencies for Sphinx
         run: |
-          pip install sphinx sphinx-rtd-theme breathe
-      
-      # --- DOXYGEN ---
-      - name: Install Doxygen
-        run: sudo apt-get install -y doxygen
-
-      - name: Generate Doxygen documentation
-        run: doxygen Doxyfile
+          pip install sphinx sphinx-rtd-theme breathe sphinx-autodoc-typehints
 
       - name: Build Sphinx documentation
-        run: make html
+        run: make html  
 
       - name: Move Sphinx output
         run: mv build/html gh-pages/sphinx
-        
+
       - name: Move Doxygen output
         run: mv doxygen_docs/html gh-pages/doxygen/
 
@@ -70,5 +70,5 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
-          github_token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}  # Użycie domyślnego tokenu GitHub Actions
           publish_dir: gh-pages
