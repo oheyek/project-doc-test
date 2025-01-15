@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['program_0',['program',['../example_8cpp.html#autotoc_md0',1,'Example Program'],['../example2_8cpp.html#autotoc_md1',1,'Example Program']]]
+  ['subtractnumbers_0',['subtractNumbers',['../example2_8cpp.html#ad6972f1ed0ff33885b5085ffca31150e',1,'example2.cpp']]]
 ];
