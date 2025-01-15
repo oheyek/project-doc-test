@@ -57,14 +57,14 @@ jobs:
       - name: Generate Doxygen documentation
         run: doxygen Doxyfile
 
-      - name: Move Doxygen output
-        run: mv doxygen_docs/html gh-pages/doxygen/
-
       - name: Build Sphinx documentation
         run: make html
 
       - name: Move Sphinx output
         run: mv build/html gh-pages/sphinx
+        
+      - name: Move Doxygen output
+        run: mv doxygen_docs/html gh-pages/doxygen/
 
       # --- DEPLOY TO GITHUB PAGES ---
       - name: Deploy to GitHub Pages
