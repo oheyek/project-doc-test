@@ -35,6 +35,6 @@ extensions.append('breathe')
 
 # Ustawienia Breathe
 breathe_projects = {
-    "CppProject": "./doxygen_docs/xml"
+    "CppProject": "../doxygen_docs/xml"
 }
 breathe_default_project = "CppProject"
