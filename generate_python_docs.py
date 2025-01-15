@@ -27,7 +27,7 @@ with open(md_file_python, 'w') as f:
         f.write(f'::: {module}\n')
         f.write('    handler: python\n\n')
 
-# Generate list of C++ files
+# generate list of C++ files
 cpp_files = [f for f in os.listdir(src_dir) if f.endswith('.cpp')]
 
 # Generate cpp.rst
