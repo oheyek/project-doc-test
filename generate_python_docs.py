@@ -38,6 +38,7 @@ with open(rst_file_cpp, 'w') as f:
         f.write(f'.. doxygenfile:: {cpp_file}\n')
         f.write('   :project: CppProject\n\n')
 
+
 # Generate cpp.md
 with open(md_file_cpp, 'w', encoding='utf-8') as f:
     f.write('# Dokumentacja C++\n\n')
