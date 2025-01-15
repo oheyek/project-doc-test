@@ -63,7 +63,9 @@ jobs:
         run: doxygen Doxyfile 
 
       - name: Build Sphinx documentation
-        run: make html  
+        run: |
+          make clean
+          make html  
 
       - name: Move Sphinx output
         run: mv build/html gh-pages/sphinx
