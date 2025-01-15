@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['main_0',['main',['../example_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'example.cpp']]]
+  ['program_0',['Program',['../example_8cpp.html#autotoc_md0',1,'Example Program'],['../example2_8cpp.html#autotoc_md1',1,'Example Program']]]
 ];
