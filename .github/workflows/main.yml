@@ -48,14 +48,8 @@ jobs:
 
       - name: Install dependencies for Sphinx
         run: |
-          pip install sphinx sphinx-rtd-theme breathe 
-
-      - name: Build Sphinx documentation
-        run: make html
-
-      - name: Move Sphinx output
-        run: mv build/html gh-pages/sphinx
-
+          pip install sphinx sphinx-rtd-theme breathe
+      
       # --- DOXYGEN ---
       - name: Install Doxygen
         run: sudo apt-get install -y doxygen
@@ -65,6 +59,12 @@ jobs:
 
       - name: Move Doxygen output
         run: mv doxygen_docs/html gh-pages/doxygen/
+
+      - name: Build Sphinx documentation
+        run: make html
+
+      - name: Move Sphinx output
+        run: mv build/html gh-pages/sphinx
 
       # --- DEPLOY TO GITHUB PAGES ---
       - name: Deploy to GitHub Pages
