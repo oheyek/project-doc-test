@@ -89,11 +89,7 @@
             
             <li class="nav-item" data-bs-level="1"><a href="#dokumentacja-c" class="nav-link">Dokumentacja C++</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-bs-level="2"><a href="#opis" class="nav-link">Opis</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="2"><a href="#kod-zrodowy" class="nav-link">Kod źródłowy</a>
+            <li class="nav-item" data-bs-level="2"><a href="#kod-zrodowy-examplecpp" class="nav-link">Kod źródłowy: example.cpp</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -105,24 +101,28 @@
                     <div class="col-md-9" role="main">
 
 <h1 id="dokumentacja-c">Dokumentacja C++</h1>
-<h2 id="opis">Opis</h2>
-<p>Ten program w języku C++ demonstruje, jak używać komentarzy do dokumentacji. Program dodaje dwie liczby i wyświetla ich sumę.</p>
-<h2 id="kod-zrodowy">Kod źródłowy</h2>
-<div class="highlight"><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
+<h2 id="kod-zrodowy-examplecpp">Kod źródłowy: example.cpp</h2>
+<div class="highlight"><pre><span></span><code><span class="cm">/**</span>
+<span class="cm"> * Example Program</span>
+<span class="cm"> * ---------------</span>
+<span class="cm"> * Demonstrates the use of comments for documentation.</span>
+<span class="cm"> */</span>
+
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
 
 <span class="cm">/**</span>
-<span class="cm"> * Dodaje dwie liczby.</span>
+<span class="cm"> * Adds two numbers.</span>
 <span class="cm"> * </span>
-<span class="cm"> * @param a Pierwsza liczba.</span>
-<span class="cm"> * @param b Druga liczba.</span>
-<span class="cm"> * @return Suma liczb a i b.</span>
+<span class="cm"> * @param a The first number.</span>
+<span class="cm"> * @param b The second number.</span>
+<span class="cm"> * @return The sum of a and b.</span>
 <span class="cm"> */</span>
 <span class="kt">int</span><span class="w"> </span><span class="nf">addNumbers</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">b</span><span class="p">;</span>
 <span class="p">}</span>
 
 <span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Suma: &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">addNumbers</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="mi">5</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Sum: &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">addNumbers</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="mi">5</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
 <span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div></div>
