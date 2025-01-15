@@ -14,8 +14,7 @@ release = '1.0'
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = ['sphinx.ext.autodoc',
-              'breathe']
+extensions = ['sphinx.ext.autodoc', 'breathe']
 
 templates_path = ['_templates']
 exclude_patterns = []
@@ -36,6 +35,6 @@ extensions.append('breathe')
 
 # Ustawienia Breathe
 breathe_projects = {
-    "CppProject": "../doxygen_docs/xml"
+    "CppProject": "./doxygen_docs/xml"
 }
 breathe_default_project = "CppProject"
