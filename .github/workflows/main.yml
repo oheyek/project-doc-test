@@ -27,6 +27,20 @@ jobs:
       - name: Install dependencies for MkDocs
         run: pip install mkdocs mkdocs-material mkdocstrings mkdocstrings-python
 
+      # --- DOXYGEN ---
+      - name: Install Doxygen
+        run: sudo apt-get install -y doxygen
+
+      # --- SPHINX ---
+      - name: Set up Python for Sphinx
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.11
+
+      - name: Install dependencies for Sphinx
+        run: |
+          pip install sphinx sphinx-rtd-theme breathe sphinx-autodoc-typehints
+
       - name: Generate python.rst and python.md
         run: python generate_python_docs.py
 
@@ -40,22 +54,8 @@ jobs:
           cd my-project-docs/
           mv site ../gh-pages/mkdocs
 
-      # --- DOXYGEN ---
-      - name: Install Doxygen
-        run: sudo apt-get install -y doxygen
-
       - name: Generate Doxygen documentation
         run: doxygen Doxyfile 
-
-      # --- SPHINX ---
-      - name: Set up Python for Sphinx
-        uses: actions/setup-python@v4
-        with:
-          python-version: 3.11
-
-      - name: Install dependencies for Sphinx
-        run: |
-          pip install sphinx sphinx-rtd-theme breathe sphinx-autodoc-typehints
 
       - name: Build Sphinx documentation
         run: make html  
