@@ -13,6 +13,11 @@ jobs:
       # Checkout the repository
       - name: Checkout repository
         uses: actions/checkout@v3
+      
+      - name: Clean build directory
+        run: |
+          rm -rf build/html
+          rm -rf doxygen_docs/xml
 
       # Create a clean directory for GitHub Pages
       - name: Prepare deployment directory
