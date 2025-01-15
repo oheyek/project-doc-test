@@ -1,26 +1,31 @@
 # Dokumentacja C++
 
-## Opis
-Ten program w języku C++ demonstruje, jak używać komentarzy do dokumentacji. Program dodaje dwie liczby i wyświetla ich sumę.
-
-## Kod źródłowy
+## Kod źródłowy: example.cpp
 
 ```cpp
+/**
+ * Example Program
+ * ---------------
+ * Demonstrates the use of comments for documentation.
+ */
+
 #include <iostream>
 
 /**
- * Dodaje dwie liczby.
+ * Adds two numbers.
  * 
- * @param a Pierwsza liczba.
- * @param b Druga liczba.
- * @return Suma liczb a i b.
+ * @param a The first number.
+ * @param b The second number.
+ * @return The sum of a and b.
  */
 int addNumbers(int a, int b) {
     return a + b;
 }
 
 int main() {
-    std::cout << "Suma: " << addNumbers(3, 5) << std::endl;
+    std::cout << "Sum: " << addNumbers(3, 5) << std::endl;
     return 0;
 }
+
 ```
+
