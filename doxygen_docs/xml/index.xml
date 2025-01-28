@@ -3,18 +3,10 @@
   <compound refid="namespaceexample" kind="namespace"><name>example</name>
     <member refid="namespaceexample_1afa0161d79758092bbe0f6ea85da91150" kind="function"><name>add_numbers</name></member>
   </compound>
-  <compound refid="namespaceexample2" kind="namespace"><name>example2</name>
-    <member refid="namespaceexample2_1ada60000ca97abf30119c09e7b1b6e362" kind="function"><name>subtract_numbers</name></member>
-  </compound>
   <compound refid="example_8cpp" kind="file"><name>example.cpp</name>
     <member refid="example_8cpp_1ae5a0c053aa6696aace68bff13ff3c988" kind="function"><name>addNumbers</name></member>
   </compound>
   <compound refid="example_8py" kind="file"><name>example.py</name>
-  </compound>
-  <compound refid="example2_8cpp" kind="file"><name>example2.cpp</name>
-    <member refid="example2_8cpp_1ad6972f1ed0ff33885b5085ffca31150e" kind="function"><name>subtractNumbers</name></member>
-  </compound>
-  <compound refid="example2_8py" kind="file"><name>example2.py</name>
   </compound>
   <compound refid="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir"><name>src</name>
   </compound>

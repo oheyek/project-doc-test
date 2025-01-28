@@ -4,8 +4,6 @@
     <compoundname>src</compoundname>
     <innerfile refid="example_8cpp">example.cpp</innerfile>
     <innerfile refid="example_8py">example.py</innerfile>
-    <innerfile refid="example2_8cpp">example2.cpp</innerfile>
-    <innerfile refid="example2_8py">example2.py</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
