@@ -1,6 +1,9 @@
 Dokumentacja C++
 ==================
 
+.. doxygenfile:: example2.cpp
+   :project: CppProject
+
 .. doxygenfile:: example.cpp
    :project: CppProject
 
